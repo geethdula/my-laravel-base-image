@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+  install:
+    on-failure: ABORT
+    runtime-versions:
+      runtime: php:8.2
+    commands:
+      - echo "Install phase"
+  pre_build:
+    on-failure: ABORT
+    commands:
+      - echo "Prebuild phase"
+  build:
+    on-failure: ABORT
+    commands:
+      - echo "Build phase"
+  post_build:
+    on-failure: ABORT
+    commands:
+      - echo "Poset build phase"
